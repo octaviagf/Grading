@@ -12,9 +12,11 @@ body {background-color: chocolate;}
 .navbar img {height: 4rem;
             border-radius: 100%;}
 
+.text-center {padding-top: 5rem;
+            padding-bottom: 5rem;}
+
 .text-center p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 3rem;
-                padding-top: 10rem;}
+                font-size: 3rem;}
 
 input {height: 4rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,7 +28,7 @@ input {height: 4rem;
 
 button {height: 3rem;
     width: 10rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
     text-align: center;

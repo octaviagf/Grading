@@ -29,7 +29,7 @@ function grading() {
             title: "D",
             text: "You falied :("
         })
-    } else if (grade <= 59){
+    } else if (grade <= 59 && grade == 0){
         Swal.fire({
             icon: "warning",
             title: "F",
