@@ -5,7 +5,7 @@ function grading() {
 
     let grade = document.getElementById("grade").value;
 
-    if (grade >= 90 && grade == 100) {
+    if (grade >= 90 && grade <= 100) {
         Swal.fire({
             icon: "success",
             title: "A",
