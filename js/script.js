@@ -5,7 +5,13 @@ function grading() {
 
     let grade = document.getElementById("grade").value;
 
-    if (grade >= 90 && grade <= 100) {
+    if (grade.trim().length <= 0){
+        Swal.fire({
+            icon: "warning",
+            title:  ":o",
+            text: "No blank spaces, please."
+        })
+    } else if (grade >= 90 && grade <= 100) {
         Swal.fire({
             icon: "success",
             title: "A",
@@ -29,7 +35,7 @@ function grading() {
             title: "D",
             text: "You falied :("
         })
-    } else if (grade <= 59 && grade >= 0){
+    } else if (grade >= 0 && grade <= 59){
         Swal.fire({
             icon: "warning",
             title: "F",
@@ -40,5 +46,5 @@ function grading() {
             icon: "error",
             text: "Your grade is invalid."
         })
-    }
+    }   
 }
